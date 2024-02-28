@@ -1,5 +1,8 @@
+require('dotenv').config()
 const mongoose = require('mongoose')
-const connectionString = process.env.MONGO_DB_URI
+const { NODE_ENV, DATABASE_PRODUCTION, DATABASE_TESTING } = process.env
+const connectionString =
+  NODE_ENV === 'test' ? DATABASE_TESTING : DATABASE_PRODUCTION
 // conexion a mongodb
 
 mongoose
@@ -10,3 +13,9 @@ mongoose
   .catch((err) => {
     console.log(err)
   })
+
+
+  // configuracion del eslint por las dudas que se rompa algo por sacarla
+// "eslintConfig": {
+//   "extends": "./node_modules/standard/eslintrc.json"
+// },

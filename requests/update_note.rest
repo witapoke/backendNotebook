@@ -1,0 +1,8 @@
+PUT http://localhost:3001/api/notes/65b47a280273dff54199aac5 
+Content-Type: application/json
+
+
+{
+    "content": "SIIII esta nota ha sido actualizada por nacho v2",
+    "important":false
+}

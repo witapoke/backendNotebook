@@ -1,8 +1,8 @@
 POST http://localhost:3001/api/notes 
 Content-Type: application/json
-
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1ZDgxN2I1ZmYwYjZlMDUxZmNiOTE1OSIsInVzZXJuYW1lIjoid2l0YXBva2UiLCJpYXQiOjE3MDg2NjQ4ODJ9.CIokz5nTF5HT_Aw2znWUfX5ceFnSqxJCKTgGSIcL2WM
 
 {
-    "content": "Creando una nota desde el restClient",
-    "important":true
+    "content": "ahora si perrito por favor",
+    "important":false
 }
